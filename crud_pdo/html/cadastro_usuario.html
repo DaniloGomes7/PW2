@@ -4,20 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Usuario</title>
+    <title>Tela de Cadastro</title>
 </head>
 
 <body>
     <div class="container-principal">
-        <div class="container-form">
-            <form method="POST" action="../php/CadastroUsuario.php">
+        <div class="container-formulario">
+            <h1>Cadastro de Usuário</h1>
 
-                <h1>Cadastro de Usuario</h1>
-                Nome <input type="text" name="nomeFormulario"><br>
-                Email <input type="email" name="emailFormulario"><br>
-                Senha <input type="password" name="senhaFormulario"><br>
+            <form method="POST" action="../php/UsuarioController.php">
+                <input type="email" name="emailFormulario" placeholder="Email:" /><br>
+                <input type="text" name="nomeFormulario" placeholder="Nome:" /><br>
+                <input type="password" name="senhaFormulario" placeholder="Senha:" /><br>
 
-                <input type="submit" name="btnCadastrar" value="Concluir">
+                <!-- CRUD -->
+
+                <input type="submit" name="requisicao" value="Atualizar" />
+                <input type="submit" name="requisicao" value="Cadastrar" />
+                <input type="submit" name="requisicao" value="Consultar" />
+                <input type="submit" name="requisicao" value="Remover" />
             </form>
         </div>
     </div>
