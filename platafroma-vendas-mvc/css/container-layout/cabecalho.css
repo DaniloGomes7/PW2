@@ -1,0 +1,15 @@
+.container-header{
+    width: 100%;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: linear-gradient(to right, rgb(25, 0, 252), rgb(136, 7, 175));    
+}
+
+.logo-principal{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
