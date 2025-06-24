@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PG inicial</title>
+    <title>Página Inicial</title>
+
+    <!-- reset de estilizacao do browser -->
+    <link rel="stylesheet" type="text/css" href="./../../css/container-layout/reset.css">
 
     <!-- estilização do cabeçalho -->
-     <link rel="stylesheet" type="text/css" href="./../../css/container-layout/cabecalho.css">
+    <link rel="stylesheet" type="text/css" href="./../../css/container-layout/cabecalho.css">
+
+    <!-- estilizacao do carrossel -->
+    <link rel="stylesheet" type="text/css" href="./../../css/componentes/carrossel.css">
+
+    <!-- estilizacao do menu -->
+    <link rel="stylesheet" type="text/css" href="./../../css/componentes/menu.css">
+    
+    <!-- CSS destinado as principais configuracoes de estilos do portal -->
+    <link rel="stylesheet" type="text/css" href="./../../css/componentes/principal.css">
 
 </head>
+
 <body>
-    <!-- cabecalho -->
-      <?php
-        include '../view/Cabecalho.php'
-    ?>
+    <!-- cabeçalho -->
+    <?php
+    include '../view/Cabecalho.php'
+        ?>
     <main class="container-principal">
         <div class="carrossel">
+
             <div class="slides">
-                <img src="./../../src/images/destaques/pastilha.jfif" alt="Pastilha de freios Gol 1996">
-                <img src="./../../src/images/destaques/mocinetica.jfif" alt="Mocinetica">
-                <img src="./../../src/images/destaques/parabrisa.jfif" alt="Parabrisa Pálio 2003">
-                <img src="./../../src/images/destaques/gol.jfif" alt="Bico injetor Gol 1996-01">
+
+                <img src="./../../src/images/destaques/pastilha.jfif" alt="Pastilha de freios Gol 1996-01">
+                <img src="./../../src/images/destaques/mocinetica.jfif" alt="Homocinética">
+                <img src="./../../src/images/destaques/parabrisa.jfif" alt="Parabrisa">
+                <img src="./../../src/images/destaques/gol.jfif" alt="Bico Injetor Gol 1996-01">
             </div>
             <button class="prev" onclick="mudarSlide(-1)"></button>
             <button class="next" onclick="mudarSlide(1)"></button>
-
         </div>
     </main>
     <!-- rodape -->
-     <script src="./../../js/carrossel.js"></script>
+    <script src="./../../js/carrossel.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-<?php
-
-
-?>

@@ -1,0 +1,51 @@
+.container-menu{
+    display: flex;
+    justify-content: flex-end;
+    
+    /* vai fazer o container crescer de acordo com o espaço disponivel */
+    flex-grow: 1;
+}
+
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+.menu li{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.menu li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    font-weight: 500;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu li a:hover{
+    background: #ff0000;
+    color: #f0f0f0;
+    text-shadow: 0px 0px 5px #ffffff;
+    border-radius: 3;
+}
+
+/* SUB-MENU (dropdown) */
+.menu li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: gray;
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px #333;
+    z-index: 10;/* ele vai garantir que o submenu fique acima de outros itens */
+}
